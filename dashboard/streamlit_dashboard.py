@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 st.title("Dashboard Kualitas Udara")
-data = pd.read_csv("cleaned_air_quality.csv")
+data = pd.read_csv("main_data.csv")
 
 st.sidebar.header("Filter")
 station = st.sidebar.selectbox("Pilih Stasiun", data["station"].unique())
